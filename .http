@@ -1,0 +1,5 @@
+@api = http://localhost:3000
+
+### get method
+GET {{api}}/
+Content-Type: application/json

@@ -19,6 +19,9 @@ var server = http.createServer(function (req, res) {
   // Get the HTTP Method
   var method = req.method.toLowerCase();
 
+  //Get the headers as an object
+  var headers = req.headers;
+
   //Get the query string as an object
   var queryStringObject = parseUrl.query;
 
@@ -26,6 +29,7 @@ var server = http.createServer(function (req, res) {
   res.end("hello world\n");
 
   //log the request path
+  console.log("request received with these headers", headers);
   console.log(
     "Request received on path: " +
       trimePath +

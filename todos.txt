@@ -1,0 +1,22 @@
+[x] basic scafolding
+[x] starting a server.
+[x] parsing request paths
+
+[ ] parsing http methods
+[ ] parsing query strings 
+[ ] parsing headers 
+[ ] parsing payloads
+[ ] routing requests 
+[ ] returnin JSON
+[ ] adding configuration
+[ ] adding https support
+[ ] service 1: /ping 
+[ ] storing data
+[ ] service 2: /users
+[ ] service 3: /tokens
+[ ] service 4: /checks 
+[ ] connecting to an API
+[ ] background workers
+[ ] loggin to files.
+[ ] login to the console.
+[ ] section overview

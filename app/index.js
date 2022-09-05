@@ -16,11 +16,16 @@ var server = http.createServer(function (req, res) {
   var path = parseUrl.pathname;
   var trimePath = path.replace(/^\/+|\/+$/g, "");
 
+  // Get the HTTP Method
+  var method = req.method.toLowerCase();
+
   //send the response
   res.end("hello world\n");
 
   //log the request path
-  console.log("Request received on path: " + trimePath);
+  console.log(
+    "Request received on path: " + trimePath + " with this method: " + method
+  );
 });
 
 //start the server, nad have it lsten on port 3000

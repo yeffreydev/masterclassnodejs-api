@@ -1,8 +1,8 @@
 [x] basic scafolding
 [x] starting a server.
 [x] parsing request paths
+[x] parsing http methods
 
-[ ] parsing http methods
 [ ] parsing query strings 
 [ ] parsing headers 
 [ ] parsing payloads

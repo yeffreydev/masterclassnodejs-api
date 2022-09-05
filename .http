@@ -1,5 +1,15 @@
 @api = http://localhost:3000
 
 ### get method
-GET {{api}}/
+GET {{api}}/food?fizz=bar
 Content-Type: application/json
+
+### post method
+POST {{api}}
+Content-Type: application/json
+
+{
+    "username": "myusername",
+    "email": "myemail@email.com",
+    "age": 13
+}

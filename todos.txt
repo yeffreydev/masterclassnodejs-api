@@ -1,11 +1,12 @@
+-- day one 
 [x] basic scafolding
 [x] starting a server.
 [x] parsing request paths
 [x] parsing http methods
 [x] parsing query strings 
+[x] parsing headers 
+[x] parsing payloads
 
-[ ] parsing headers 
-[ ] parsing payloads
 [ ] routing requests 
 [ ] returnin JSON
 [ ] adding configuration

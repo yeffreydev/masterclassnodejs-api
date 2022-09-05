@@ -2,8 +2,8 @@
 [x] starting a server.
 [x] parsing request paths
 [x] parsing http methods
+[x] parsing query strings 
 
-[ ] parsing query strings 
 [ ] parsing headers 
 [ ] parsing payloads
 [ ] routing requests 

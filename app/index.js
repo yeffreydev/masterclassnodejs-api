@@ -19,17 +19,25 @@ var server = http.createServer(function (req, res) {
   // Get the HTTP Method
   var method = req.method.toLowerCase();
 
+  //Get the query string as an object
+  var queryStringObject = parseUrl.query;
+
   //send the response
   res.end("hello world\n");
 
   //log the request path
   console.log(
-    "Request received on path: " + trimePath + " with this method: " + method
+    "Request received on path: " +
+      trimePath +
+      " with this method: " +
+      method +
+      " and with these query string parameters",
+    JSON.stringify(queryStringObject)
   );
 });
 
 //start the server, nad have it lsten on port 3000
 
 server.listen(3000, function () {
-  console.log("the server is listening on port 3000 noew");
+  console.log("the server is listening on port 3000 now");
 });

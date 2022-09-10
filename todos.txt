@@ -7,8 +7,11 @@
 [x] parsing headers 
 [x] parsing payloads
 
---day two
-[ ] routing requests 
+--day two 09/09/22
+[x] routing requests 
+
+--day three 10/9/22
+
 [ ] returnin JSON
 [ ] adding configuration
 [ ] adding https support

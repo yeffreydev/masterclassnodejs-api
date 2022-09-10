@@ -7,6 +7,7 @@
 [x] parsing headers 
 [x] parsing payloads
 
+--day two
 [ ] routing requests 
 [ ] returnin JSON
 [ ] adding configuration

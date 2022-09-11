@@ -1,7 +1,7 @@
 @api = http://localhost:3000
 
 ### get method
-GET {{api}}/food?fizz=bar
+GET {{api}}/sample
 Content-Type: application/json
 
 ### post method

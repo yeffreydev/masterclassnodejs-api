@@ -11,8 +11,9 @@
 [x] routing requests 
 
 --day three 10/9/22
+[x] returnin JSON
 
-[ ] returnin JSON
+--day four 11/09/22
 [ ] adding configuration
 [ ] adding https support
 [ ] service 1: /ping 

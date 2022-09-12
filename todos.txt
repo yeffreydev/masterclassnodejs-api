@@ -14,7 +14,11 @@
 [x] returnin JSON
 
 --day four 11/09/22
-[ ] adding configuration
+
+--day five 12/08/22
+[x] adding configuration
+
+--day six 13/08/22
 [ ] adding https support
 [ ] service 1: /ping 
 [ ] storing data

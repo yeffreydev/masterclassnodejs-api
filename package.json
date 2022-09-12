@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./app/index.js"
+    "start": "cross-env NODE_ENV=production node app/index.js",
+    "dev": "cross-env NODE_ENV=staging node app/index.js"
   },
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }

@@ -15,11 +15,13 @@
 
 --day four 11/09/22
 
---day five 12/08/22
+--day five 12/09/22
 [x] adding configuration
 
---day six 13/08/22
-[ ] adding https support
+--day six 13/09/22
+[x] adding https support
+
+--day seven 14/09/22
 [ ] service 1: /ping 
 [ ] storing data
 [ ] service 2: /users

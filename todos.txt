@@ -23,7 +23,8 @@
 [x] service 1: /ping 
 
 --day seven 14/09/22
-[ ] storing data
+[x] storing data
+
 [ ] service 2: /users
 [ ] service 3: /tokens
 [ ] service 4: /checks 

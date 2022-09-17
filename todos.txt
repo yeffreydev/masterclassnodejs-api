@@ -25,7 +25,10 @@
 --day seven 14/09/22
 [x] storing data
 
-[ ] service 2: /users
+--day eight 15 /09/22
+--day nine 16/08/22
+[x] service 2: /users
+
 [ ] service 3: /tokens
 [ ] service 4: /checks 
 [ ] connecting to an API

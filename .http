@@ -3,13 +3,27 @@
 ### get method
 GET {{api}}/sample
 Content-Type: application/json
-
+###get users
+GET  {{api}}/users?phone=5551234567
 ### post method
-POST {{api}}
+POST {{api}}/users
 Content-Type: application/json
 
-{
-    "username": "myusername",
-    "email": "myemail@email.com",
-    "age": 13
+{ 
+    "firstName": "JIM",
+    "lastName": "JIJI",
+    "phone": "5551234365",
+    "password": "thisIsAPassword",
+    "tosAgreement": true
 }
+###update user
+PUT {{api}}/users
+Content-Type: application/json
+
+{ 
+    "firstName": "JHON Cenita",
+    "phone": "5551234565"
+}
+
+###delete user
+DELETE {{api}}/users?phone=5551234565

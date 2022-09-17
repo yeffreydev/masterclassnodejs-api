@@ -2,3 +2,4 @@
 yarn.lock
 /https/cert.pem
 /https/key.pem
+/.data

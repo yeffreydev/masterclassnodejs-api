@@ -16,6 +16,7 @@ Content-Type: application/json
     "password": "thisIsAPassword",
     "tosAgreement": true
 }
+
 ###update user
 PUT {{api}}/users
 Content-Type: application/json
@@ -27,3 +28,16 @@ Content-Type: application/json
 
 ###delete user
 DELETE {{api}}/users?phone=5551234565
+
+
+###tokens=======================
+### post generate token
+POST {{api}}/tokens
+Content-Type: application/json
+
+{ 
+    "phone": "5551234365",
+    "password": "thisIsAPassword"
+}
+###get token
+GET {{api}}/tokens?id=tfevutg0pfrovpa41kp2

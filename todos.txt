@@ -29,8 +29,8 @@
 --day nine 16/08/22
 [x] service 2: /users
 
---day 24/10/22
-[x-] service 3: /tokens 10:59
+--day 24/10/22, 26/11/22
+[x-] service 3: /tokens 20:08
 [ ] service 4: /checks 
 [ ] connecting to an API
 [ ] background workers

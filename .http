@@ -39,5 +39,13 @@ Content-Type: application/json
     "phone": "5551234365",
     "password": "thisIsAPassword"
 }
+###update token
+PUT  {{api}}/tokens
+Content-Type: application/json 
+
+{
+    "id": "be7o4g9ssu39jzhct38b",
+    "extend": true
+}
 ###get token
 GET {{api}}/tokens?id=tfevutg0pfrovpa41kp2

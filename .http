@@ -48,4 +48,7 @@ Content-Type: application/json
     "extend": true
 }
 ###get token
-GET {{api}}/tokens?id=tfevutg0pfrovpa41kp2
+GET {{api}}/tokens?id=be7o4g9ssu39jzhct38b
+
+###delete token
+DELETE {{api}}/tokens?id=be7o4g9ssu39jzhct38b HTTP/1.1

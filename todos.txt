@@ -30,7 +30,7 @@
 [x] service 2: /users
 
 --day 24/10/22, 26/11/22
-[x-] service 3: /tokens 26:08
+[x-] service 3: /tokens 35:00
 [ ] service 4: /checks 
 [ ] connecting to an API
 [ ] background workers

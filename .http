@@ -4,7 +4,9 @@
 GET {{api}}/sample
 Content-Type: application/json
 ###get users
-GET  {{api}}/users?phone=5551234567
+GET  {{api}}/users?phone=5551234365
+token: gh52vd6k2i7e0ijxk5j8
+
 ### post method
 POST {{api}}/users
 Content-Type: application/json

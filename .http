@@ -54,3 +54,15 @@ GET {{api}}/tokens?id=be7o4g9ssu39jzhct38b
 
 ###delete token
 DELETE {{api}}/tokens?id=be7o4g9ssu39jzhct38b HTTP/1.1
+
+###checks ------------
+POST {{api}}/checks HTTP/1.1
+token: 97i4k9bzwo5q91yy2yz8
+
+{
+   "protocol": "http",
+    "url": "google.com",
+    "method": "get",
+    "successCodes": [200, 201],
+    "timeoutSeconds": 3
+}

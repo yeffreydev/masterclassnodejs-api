@@ -32,7 +32,7 @@
 --day 24/10/22, 26/11/22
 [x] service 3: /tokens
 [x] service 4: /checks
-[ ] connecting to an API
+[x] connecting to an API
 [ ] background workers
 [ ] loggin to files.
 [ ] login to the console.

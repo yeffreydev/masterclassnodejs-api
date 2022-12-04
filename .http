@@ -4,7 +4,7 @@
 GET {{api}}/sample
 Content-Type: application/json
 ###get users
-GET  {{api}}/users?phone=5551234365
+GET  {{api}}/users?phone=5551234375
 token: gh52vd6k2i7e0ijxk5j8
 
 ### post method
@@ -14,7 +14,7 @@ Content-Type: application/json
 { 
     "firstName": "JIM",
     "lastName": "JIJI",
-    "phone": "5551234365",
+    "phone": "5551234311",
     "password": "thisIsAPassword",
     "tosAgreement": true
 }
@@ -29,8 +29,8 @@ Content-Type: application/json
 }
 
 ###delete user
-DELETE {{api}}/users?phone=5551234565
-
+DELETE {{api}}/users?phone=5551234311
+token: kfcc1c6440k17xozkji0
 
 ###tokens=======================
 ### post generate token
@@ -38,7 +38,7 @@ POST {{api}}/tokens
 Content-Type: application/json
 
 { 
-    "phone": "5551234365",
+    "phone": "5551234311",
     "password": "thisIsAPassword"
 }
 ###update token
@@ -57,7 +57,7 @@ DELETE {{api}}/tokens?id=be7o4g9ssu39jzhct38b HTTP/1.1
 
 ###checks ------------
 POST {{api}}/checks HTTP/1.1
-token: 97i4k9bzwo5q91yy2yz8
+token: kfcc1c6440k17xozkji0
 
 {
    "protocol": "http",
@@ -67,5 +67,23 @@ token: 97i4k9bzwo5q91yy2yz8
     "timeoutSeconds": 3
 }
 ### get check by id.
-GET {{api}}/checks?id=3cu6ft6zwu5tkpbc8s4b
-token: urxjber21e40qucraafg
+GET {{api}}/checks?id=h6gawce0eewu86bzb1ht
+token: ghyad6uh3zo4vga2uv7v
+
+### put check by id
+PUT {{api}}/checks
+Content-Type: application/json
+token: ghyad6uh3zo4vga2uv7v
+
+{
+    "id":"eqcq22wdw10k0fghb8i2",
+    "protocol" : "https",
+    "url": "brave.com",
+    "method": "put",
+    "successCodes": [200, 201, 403],
+    "timeoutSeconds": 2
+}
+
+###delet check by id
+DELETE {{api}}/checks?id=3315vgupu7e8kzg29he6
+token: ghyad6uh3zo4vga2uv7v

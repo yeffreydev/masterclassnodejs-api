@@ -33,7 +33,7 @@
 [x] service 3: /tokens
 [x] service 4: /checks
 [x] connecting to an API
-[ ] background workers
+[x-] background workers 30:11
 [ ] loggin to files.
 [ ] login to the console.
 [ ] section overview

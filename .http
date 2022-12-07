@@ -57,11 +57,12 @@ DELETE {{api}}/tokens?id=be7o4g9ssu39jzhct38b HTTP/1.1
 
 ###checks ------------
 POST {{api}}/checks HTTP/1.1
-token: kfcc1c6440k17xozkji0
+Content-Type: application/json
+token: gx1uueq442cpfrii8kh9
 
 {
    "protocol": "http",
-    "url": "google.com",
+    "url": "yahoo.cyahoom",
     "method": "get",
     "successCodes": [200, 201],
     "timeoutSeconds": 3

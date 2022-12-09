@@ -34,6 +34,6 @@
 [x] service 4: /checks
 [x] connecting to an API
 [x] background workers 
-[x-] loggin to files. 6:20
+[x-] loggin to files. 24:16
 [ ] login to the console.
 [ ] section overview

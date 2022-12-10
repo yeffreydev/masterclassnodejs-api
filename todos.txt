@@ -35,5 +35,5 @@
 [x] connecting to an API
 [x] background workers 
 [x] loggin to files. 24:16
-[x-] login to the console. 5:00
+[x] login to the console. 5:00
 [ ] section overview

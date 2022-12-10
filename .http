@@ -14,7 +14,7 @@ Content-Type: application/json
 { 
     "firstName": "JIM",
     "lastName": "JIJI",
-    "phone": "5551234311",
+    "phone": "5551234321",
     "password": "thisIsAPassword",
     "tosAgreement": true
 }

@@ -1,1 +1,0 @@
-{"check":{"id":"61kjy57sgdwk71btgvwv","userPhone":"4158675309","protocol":"http","url":"google.com","method":"get","successCodes":[200,201],"timeoutSeconds":3,"state":"down","lastChecked":1670632653873},"outcome":{"error":false,"responseCode":301},"state":"down","alert":false,"time":1670632680477}

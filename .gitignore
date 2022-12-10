@@ -1,7 +1,7 @@
 /node_modules
+/.logs
 yarn.lock
 /https/cert.pem
 /https/key.pem
-/.logs
 /.logs/*
 /.data

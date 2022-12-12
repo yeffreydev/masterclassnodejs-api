@@ -1,39 +1,20 @@
--- day one 
-[x] basic scafolding
-[x] starting a server.
-[x] parsing request paths
-[x] parsing http methods
-[x] parsing query strings 
-[x] parsing headers 
-[x] parsing payloads
+GUI app 
 
---day two 09/09/22
-[x] routing requests 
+- [x] section overview 
+- [x] refactoring for a GUI 
 
---day three 10/9/22
-[x] returnin JSON
-
---day four 11/09/22
-
---day five 12/09/22
-[x] adding configuration
-
---day six 13/09/22
-[x] adding https support
-[x] service 1: /ping 
-
---day seven 14/09/22
-[x] storing data
-
---day eight 15 /09/22
---day nine 16/08/22
-[x] service 2: /users
-
---day 24/10/22, 26/11/22
-[x] service 3: /tokens
-[x] service 4: /checks
-[x] connecting to an API
-[x] background workers 
-[x] loggin to files. 24:16
-[x] login to the console. 5:00
-[x] section overview
+timer: 17 min 58sec
+goal: using templates 13:33
+- [ ] using templates
+- [ ] serving static assets 
+- [ ] making ajax Request 
+- [ ] page 1: Index 
+- [ ] page 2: Create an Account 
+- [ ] page 3: create a Session 
+- [ ] page 4: Deleted a Session 
+- [ ] page 5: Edit Account 
+- [ ] page 6: Deleted Account 
+- [ ] page 7: create a Check 
+- [ ] page 8: Dashboard.
+- [ ] page 9: Edit a check 
+- [ ] section review

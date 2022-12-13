@@ -5,7 +5,7 @@ GUI app
 
 timer: 17 min 58sec
 goal: using templates 13:33
-- [ ] using templates
+- [x-] using templates 14:27
 - [ ] serving static assets 
 - [ ] making ajax Request 
 - [ ] page 1: Index 

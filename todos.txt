@@ -3,9 +3,9 @@ GUI app
 - [x] section overview 
 - [x] refactoring for a GUI 
 
-timer: 17 min 58sec
-goal: using templates 13:33
-- [x-] using templates 14:27
+timer 33:04
+goal: serving static assets 20:23
+- [x] using templates
 - [ ] serving static assets 
 - [ ] making ajax Request 
 - [ ] page 1: Index 

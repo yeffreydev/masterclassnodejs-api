@@ -3,10 +3,10 @@ GUI app
 - [x] section overview 
 - [x] refactoring for a GUI 
 
-timer 33:04
-goal: serving static assets 20:23
+timer 40:00
+goal: deleted session 4:5
 - [x] using templates
-- [ ] serving static assets 
+- [x] serving static assets 
 - [ ] making ajax Request 
 - [ ] page 1: Index 
 - [ ] page 2: Create an Account 

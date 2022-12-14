@@ -3,7 +3,7 @@ GUI app
 - [x] section overview 
 - [x] refactoring for a GUI 
 
-timer 1:00:00
+timer 19:48
 goal: deleted session 4:5
 - [x] using templates
 - [x] serving static assets 
@@ -11,7 +11,7 @@ goal: deleted session 4:5
 - [x] page 1: Index 
 - [x] page 2: Create an Account 
 - [x] page 3: create a Session  
-- [ ] page 4: Deleted a Session 
+- [x] page 4: Deleted a Session 
 - [ ] page 5: Edit Account 
 - [ ] page 6: Deleted Account 
 - [ ] page 7: create a Check 

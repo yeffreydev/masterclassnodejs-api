@@ -10,7 +10,7 @@ goal: deleted session 4:5
 - [x] making ajax Request 
 - [x] page 1: Index 
 - [x] page 2: Create an Account 
-- [ ] page 3: create a Session 
+- [x] page 3: create a Session  
 - [ ] page 4: Deleted a Session 
 - [ ] page 5: Edit Account 
 - [ ] page 6: Deleted Account 

@@ -3,7 +3,7 @@ GUI app
 - [x] section overview 
 - [x] refactoring for a GUI 
 
-timer 35:00
+timer 10:00
 goal: adding a cli 13:18
 - [x] using templates
 - [x] serving static assets 
@@ -14,7 +14,7 @@ goal: adding a cli 13:18
 - [x] page 4: Deleted a Session 
 - [x] page 5: Edit Account 
 - [x] page 6: Deleted Account 
-- [ ] page 7: create a Check 
+- [x] page 7: create a Check 
 - [ ] page 8: Dashboard.
 - [ ] page 9: Edit a check 
 - [ ] section review

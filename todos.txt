@@ -3,8 +3,8 @@ GUI app
 - [x] section overview 
 - [x] refactoring for a GUI 
 
-timer 19:48
-goal: deleted session 4:5
+timer 35:00
+goal: adding a cli 13:18
 - [x] using templates
 - [x] serving static assets 
 - [x] making ajax Request 
@@ -12,7 +12,7 @@ goal: deleted session 4:5
 - [x] page 2: Create an Account 
 - [x] page 3: create a Session  
 - [x] page 4: Deleted a Session 
-- [ ] page 5: Edit Account 
+- [x] page 5: Edit Account 
 - [ ] page 6: Deleted Account 
 - [ ] page 7: create a Check 
 - [ ] page 8: Dashboard.

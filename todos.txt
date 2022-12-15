@@ -13,7 +13,7 @@ goal: adding a cli 13:18
 - [x] page 3: create a Session  
 - [x] page 4: Deleted a Session 
 - [x] page 5: Edit Account 
-- [ ] page 6: Deleted Account 
+- [x] page 6: Deleted Account 
 - [ ] page 7: create a Check 
 - [ ] page 8: Dashboard.
 - [ ] page 9: Edit a check 

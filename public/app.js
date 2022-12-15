@@ -1,66 +1,68 @@
-/**
- * Frontend logic or the application
+/*
+ * Frontend Logic for application
+ *
  */
 
-//Container or the frontednd application
+// Container for frontend application
 var app = {};
 
-//config
+// Config
 app.config = {
   sessionToken: false,
 };
 
-//Ajax client for the restful API
-
+// AJAX Client (for RESTful API)
 app.client = {};
 
-//interface for making API calls
-
+// Interface for making API calls
 app.client.request = function (headers, path, method, queryStringObject, payload, callback) {
-  //Set defaults
+  // Set defaults
   headers = typeof headers == "object" && headers !== null ? headers : {};
   path = typeof path == "string" ? path : "/";
-  method = typeof method == "string" && ["POST", "GET", "PUT", "DELETE"].indexOf(method) > -1 ? method.toUpperCase() : "GET";
+  method = typeof method == "string" && ["POST", "GET", "PUT", "DELETE"].indexOf(method.toUpperCase()) > -1 ? method.toUpperCase() : "GET";
   queryStringObject = typeof queryStringObject == "object" && queryStringObject !== null ? queryStringObject : {};
   payload = typeof payload == "object" && payload !== null ? payload : {};
   callback = typeof callback == "function" ? callback : false;
 
-  // for each query string parameter sent, add it to the path
+  // For each query string parameter sent, add it to the path
   var requestUrl = path + "?";
   var counter = 0;
   for (var queryKey in queryStringObject) {
     if (queryStringObject.hasOwnProperty(queryKey)) {
       counter++;
-      //if a at least one query string parameter has already been added, prepend new one with an ampersand
+      // If at least one query string parameter has already been added, preprend new ones with an ampersand
       if (counter > 1) {
         requestUrl += "&";
       }
-      //Add the key and value
+      // Add the key and value
       requestUrl += queryKey + "=" + queryStringObject[queryKey];
     }
   }
-  //Form the http request as a JSON type
+
+  // Form the http request as a JSON type
   var xhr = new XMLHttpRequest();
   xhr.open(method, requestUrl, true);
-  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.setRequestHeader("Content-type", "application/json");
 
-  //for each header sent, add it to the request
+  // For each header sent, add it to the request
   for (var headerKey in headers) {
     if (headers.hasOwnProperty(headerKey)) {
       xhr.setRequestHeader(headerKey, headers[headerKey]);
     }
   }
 
-  //if there is a current session token set, add that as a header
+  // If there is a current session token set, add that as a header
   if (app.config.sessionToken) {
     xhr.setRequestHeader("token", app.config.sessionToken.id);
   }
-  //when the request comes back, handle the response
+
+  // When the request comes back, handle the response
   xhr.onreadystatechange = function () {
     if (xhr.readyState == XMLHttpRequest.DONE) {
       var statusCode = xhr.status;
       var responseReturned = xhr.responseText;
-      //callback if requested
+
+      // Callback if requested
       if (callback) {
         try {
           var parsedResponse = JSON.parse(responseReturned);
@@ -71,9 +73,10 @@ app.client.request = function (headers, path, method, queryStringObject, payload
       }
     }
   };
-  //Send the paylaod as JSON
-  var paylaodString = JSON.stringify(payload);
-  xhr.send(paylaodString);
+
+  // Send the payload as JSON
+  var payloadString = JSON.stringify(payload);
+  xhr.send(payloadString);
 };
 
 // Bind the logout button
@@ -210,11 +213,13 @@ app.formResponseProcessor = function (formId, requestPayload, responsePayload) {
       phone: requestPayload.phone,
       password: requestPayload.password,
     };
+
     app.client.request(undefined, "api/tokens", "POST", undefined, newPayload, function (newStatusCode, newResponsePayload) {
       // Display an error on the form if needed
       if (newStatusCode !== 200) {
         // Set the formError field with the error text
         document.querySelector("#" + formId + " .formError").innerHTML = "Sorry, an error has occured. Please try again.";
+
         // Show (unhide) the form error field on the form
         document.querySelector("#" + formId + " .formError").style.display = "block";
       } else {
@@ -382,6 +387,111 @@ app.loadAccountEditPage = function () {
   }
 };
 
+// Load the dashboard page specifically
+app.loadChecksListPage = function () {
+  // Get the phone number from the current token, or log the user out if none is there
+  var phone = typeof app.config.sessionToken.phone == "string" ? app.config.sessionToken.phone : false;
+  if (phone) {
+    // Fetch the user data
+    var queryStringObject = {
+      phone: phone,
+    };
+    app.client.request(undefined, "api/users", "GET", queryStringObject, undefined, function (statusCode, responsePayload) {
+      if (statusCode == 200) {
+        // Determine how many checks the user has
+        var allChecks = typeof responsePayload.checks == "object" && responsePayload.checks instanceof Array && responsePayload.checks.length > 0 ? responsePayload.checks : [];
+        if (allChecks.length > 0) {
+          // Show each created check as a new row in the table
+          allChecks.forEach(function (checkId) {
+            // Get the data for the check
+            var newQueryStringObject = {
+              id: checkId,
+            };
+            app.client.request(undefined, "api/checks", "GET", newQueryStringObject, undefined, function (statusCode, responsePayload) {
+              if (statusCode == 200) {
+                var checkData = responsePayload;
+                // Make the check data into a table row
+                var table = document.getElementById("checksListTable");
+                var tr = table.insertRow(-1);
+                tr.classList.add("checkRow");
+                var td0 = tr.insertCell(0);
+                var td1 = tr.insertCell(1);
+                var td2 = tr.insertCell(2);
+                var td3 = tr.insertCell(3);
+                var td4 = tr.insertCell(4);
+                td0.innerHTML = responsePayload.method.toUpperCase();
+                td1.innerHTML = responsePayload.protocol + "://";
+                td2.innerHTML = responsePayload.url;
+                var state = typeof responsePayload.state == "string" ? responsePayload.state : "unknown";
+                td3.innerHTML = state;
+                td4.innerHTML = '<a href="/checks/edit?id=' + responsePayload.id + '">View / Edit / Delete</a>';
+              } else {
+                console.log("Error trying to load check ID: ", checkId);
+              }
+            });
+          });
+
+          if (allChecks.length < 5) {
+            // Show the createCheck CTA
+            document.getElementById("createCheckCTA").style.display = "block";
+          }
+        } else {
+          // Show 'you have no checks' message
+          document.getElementById("noChecksMessage").style.display = "table-row";
+
+          // Show the createCheck CTA
+          document.getElementById("createCheckCTA").style.display = "block";
+        }
+      } else {
+        // If the request comes back as something other than 200, log the user our (on the assumption that the api is temporarily down or the users token is bad)
+        app.logUserOut();
+      }
+    });
+  } else {
+    app.logUserOut();
+  }
+};
+
+// Load the checks edit page specifically
+app.loadChecksEditPage = function () {
+  // Get the check id from the query string, if none is found then redirect back to dashboard
+  var id = typeof window.location.href.split("=")[1] == "string" && window.location.href.split("=")[1].length > 0 ? window.location.href.split("=")[1] : false;
+  if (id) {
+    // Fetch the check data
+    var queryStringObject = {
+      id: id,
+    };
+    app.client.request(undefined, "api/checks", "GET", queryStringObject, undefined, function (statusCode, responsePayload) {
+      if (statusCode == 200) {
+        // Put the hidden id field into both forms
+        var hiddenIdInputs = document.querySelectorAll("input.hiddenIdInput");
+        for (var i = 0; i < hiddenIdInputs.length; i++) {
+          hiddenIdInputs[i].value = responsePayload.id;
+        }
+
+        // Put the data into the top form as values where needed
+        document.querySelector("#checksEdit1 .displayIdInput").value = responsePayload.id;
+        document.querySelector("#checksEdit1 .displayStateInput").value = responsePayload.state;
+        document.querySelector("#checksEdit1 .protocolInput").value = responsePayload.protocol;
+        document.querySelector("#checksEdit1 .urlInput").value = responsePayload.url;
+        document.querySelector("#checksEdit1 .methodInput").value = responsePayload.method;
+        document.querySelector("#checksEdit1 .timeoutInput").value = responsePayload.timeoutSeconds;
+        var successCodeCheckboxes = document.querySelectorAll("#checksEdit1 input.successCodesInput");
+        for (var i = 0; i < successCodeCheckboxes.length; i++) {
+          if (responsePayload.successCodes.indexOf(parseInt(successCodeCheckboxes[i].value)) > -1) {
+            successCodeCheckboxes[i].checked = true;
+          }
+        }
+      } else {
+        // If the request comes back as something other than 200, redirect back to dashboard
+        window.location = "/checks/all";
+      }
+    });
+  } else {
+    window.location = "/checks/all";
+  }
+};
+
 // Loop to renew token often
 app.tokenRenewalLoop = function () {
   setInterval(function () {
@@ -407,7 +517,7 @@ app.init = function () {
   // Renew token
   app.tokenRenewalLoop();
 
-  //Load data on page
+  // Load data on page
   app.loadDataOnPage();
 };
 

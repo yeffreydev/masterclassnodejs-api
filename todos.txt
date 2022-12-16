@@ -3,7 +3,6 @@ GUI app
 - [x] section overview 
 - [x] refactoring for a GUI 
 
-goal: adding a cli 13:18
 - [x] using templates
 - [x] serving static assets 
 - [x] making ajax Request 
@@ -18,4 +17,18 @@ goal: adding a cli 13:18
 - [x] page 9: Edit a check 
 - [x] section review
 
+goal: adding a cli 13:18
 BUILDING A CLI 
+- [x] Section overview 
+- [x-] Adding a CLI 13:12
+- [ ] Handling Events
+- [ ] Command 1:Exit 
+- [ ] command 2: Main /Help 
+- [ ] command 3: Stats 
+- [ ] command 4: List users 
+- [ ] command 5: More User Info 
+- [ ] command 6: List Checks 
+- [ ] Command 7: More Check Info 
+- [ ] command 8: List Logs 
+- [ ] command 9: More Log Info 
+- [ ] Section Review

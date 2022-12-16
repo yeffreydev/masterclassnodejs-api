@@ -15,6 +15,6 @@ goal: adding a cli 13:18
 - [x] page 5: Edit Account 
 - [x] page 6: Deleted Account 
 - [x] page 7: create a Check 
-- [ ] page 8: Dashboard.
+- [x] page 8: Dashboard.
 - [ ] page 9: Edit a check 
 - [ ] section review

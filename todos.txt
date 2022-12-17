@@ -24,7 +24,7 @@ BUILDING A CLI
 - [x] Handling Events
 - [x] Command 1:Exit 
 - [x] command 2: Main /Help 
-- [ ] command 3: Stats 
+- [x] command 3: Stats 
 - [ ] command 4: List users 
 - [ ] command 5: More User Info 
 - [ ] command 6: List Checks 

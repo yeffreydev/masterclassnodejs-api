@@ -88,3 +88,6 @@ token: ghyad6uh3zo4vga2uv7v
 ###delet check by id
 DELETE {{api}}/checks?id=3315vgupu7e8kzg29he6
 token: ghyad6uh3zo4vga2uv7v
+
+###error request
+GET {{api}}/examples/error

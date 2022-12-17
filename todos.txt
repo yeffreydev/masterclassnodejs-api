@@ -26,7 +26,7 @@ BUILDING A CLI
 - [x] command 2: Main /Help 
 - [x] command 3: Stats 
 - [x] command 4: List users 
-- [ ] command 5: More User Info 
+- [x] command 5: More User Info 
 - [ ] command 6: List Checks 
 - [ ] Command 7: More Check Info 
 - [ ] command 8: List Logs 

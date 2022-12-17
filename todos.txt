@@ -29,6 +29,6 @@ BUILDING A CLI
 - [x] command 5: More User Info 
 - [x] command 6: List Checks 
 - [x] Command 7: More Check Info 
-- [ ] command 8: List Logs 
+- [x] command 8: List Logs 
 - [ ] command 9: More Log Info 
 - [ ] Section Review

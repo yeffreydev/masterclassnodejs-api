@@ -20,7 +20,7 @@ GUI app
 goal: adding a cli 13:18
 BUILDING A CLI 
 - [x] Section overview 
-- [x-] Adding a CLI 13:12
+- [x] Adding a CLI 13:12
 - [ ] Handling Events
 - [ ] Command 1:Exit 
 - [ ] command 2: Main /Help 

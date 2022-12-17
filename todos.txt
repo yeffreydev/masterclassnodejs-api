@@ -23,7 +23,7 @@ BUILDING A CLI
 - [x] Adding a CLI 13:12
 - [x] Handling Events
 - [x] Command 1:Exit 
-- [ ] command 2: Main /Help 
+- [x] command 2: Main /Help 
 - [ ] command 3: Stats 
 - [ ] command 4: List users 
 - [ ] command 5: More User Info 

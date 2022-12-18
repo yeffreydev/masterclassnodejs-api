@@ -36,7 +36,7 @@ goal: adding unit test 1:10
 GANING STABILITY 
 - [x] Section Overview 
 - [x] Creating erros
-- [ ] Using the Debugger.
+- [x] Using the Debugger.
 - [ ] Linting with 'strict'
 - [ ] Adding a Test Runner 
 - [ ] Adding Unit Tests.

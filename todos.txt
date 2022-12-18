@@ -37,7 +37,7 @@ GANING STABILITY
 - [x] Section Overview 
 - [x] Creating erros
 - [x] Using the Debugger.
-- [ ] Linting with 'strict'
+- [x] Linting with 'strict'
 - [ ] Adding a Test Runner 
 - [ ] Adding Unit Tests.
 - [ ] Adding API Tests

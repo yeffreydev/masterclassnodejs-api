@@ -2,7 +2,6 @@ GUI app
 
 - [x] section overview 
 - [x] refactoring for a GUI 
-
 - [x] using templates
 - [x] serving static assets 
 - [x] making ajax Request 
@@ -32,7 +31,6 @@ BUILDING A CLI
 - [x] command 9: More Log Info 
 - [x] Section Review
 
-goal: adding performance: refactoring for performance test 10:12
 GANING STABILITY 
 - [x] Section Overview 
 - [x] Creating erros
@@ -43,4 +41,12 @@ GANING STABILITY
 - [x] Adding API Tests
 - [x] Section Review 
 
+goal: adding performance: refactoring for performance test 10:12
+Gaining performance
+- [x] section overview 
+- [ ] refactoring for performance 
+- [ ] using performance hooks
+- [ ] using a cluster 
+- [ ] using child processes
+- [ ] section review.
 

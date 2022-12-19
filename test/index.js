@@ -2,16 +2,15 @@
  * Test runner
  */
 
-//Dependencies
-var helpers = require("./../lib/helpers");
-var assert = require("assert");
-
 //Application logic for the test runner
 var _app = {};
 //container for the tests
 _app.tests = {
   unit: {},
 };
+
+//Add on the unit tests
+_app.tests.unit = require("./unit");
 
 //Count all te tests
 _app.countTests = function () {

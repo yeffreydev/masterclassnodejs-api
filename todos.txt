@@ -32,7 +32,7 @@ BUILDING A CLI
 - [x] command 9: More Log Info 
 - [x] Section Review
 
-goal: adding unit test 1:10
+goal: adding performance: refactoring for performance test 10:12
 GANING STABILITY 
 - [x] Section Overview 
 - [x] Creating erros
@@ -40,7 +40,7 @@ GANING STABILITY
 - [x] Linting with 'strict'
 - [x] Adding a Test Runner 
 - [x] Adding Unit Tests. 1:10
-- [ ] Adding API Tests
-- [ ] Section Review 
+- [x] Adding API Tests
+- [x] Section Review 
 
 

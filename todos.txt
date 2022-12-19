@@ -41,10 +41,10 @@ GANING STABILITY
 - [x] Adding API Tests
 - [x] Section Review 
 
-goal: adding performance: refactoring for performance test 10:12
+goal:  Loose ends: section overview 1:7
 Gaining performance
 - [x] section overview 
-- [ ] refactoring for performance 
+- [x] refactoring for performance 
 - [ ] using performance hooks
 - [ ] using a cluster 
 - [ ] using child processes

@@ -19,7 +19,7 @@ GUI app
 
 BUILDING A CLI 
 - [x] Section overview 
-- [x] Adding a CLI 13:12
+- [x] Adding a CLI 
 - [x] Handling Events
 - [x] Command 1:Exit 
 - [x] command 2: Main /Help 
@@ -39,7 +39,7 @@ GANING STABILITY
 - [x] Using the Debugger.
 - [x] Linting with 'strict'
 - [x] Adding a Test Runner 
-- [ ] Adding Unit Tests.
+- [x-] Adding Unit Tests. 1:10
 - [ ] Adding API Tests
 - [ ] Section Review 
 

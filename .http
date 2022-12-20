@@ -34,12 +34,12 @@ token: kfcc1c6440k17xozkji0
 
 ###tokens=======================
 ### post generate token
-POST {{api}}/tokens
+POST {{api}}/api/tokens
 Content-Type: application/json
 
 { 
-    "phone": "5551234311",
-    "password": "thisIsAPassword"
+    "phone": "1000000000",
+    "password": "lapadula"
 }
 ###update token
 PUT  {{api}}/tokens

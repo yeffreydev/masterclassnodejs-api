@@ -45,7 +45,7 @@ goal:  Loose ends: section overview 1:7
 Gaining performance
 - [x] section overview 
 - [x] refactoring for performance 
-- [ ] using performance hooks
+- [x] using performance hooks
 - [ ] using a cluster 
 - [ ] using child processes
 - [ ] section review.

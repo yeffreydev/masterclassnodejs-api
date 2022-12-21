@@ -51,8 +51,8 @@ Gaining performance
 
 goal Loose ends TLS/SSl 7:7
 Loose Ends
-- [-x] section overview 1:7
-- [ ] HTTP2
+- [x] section overview 1:7
+- [x] HTTP2  - web socket stream server and client
 - [ ] VM 
 - [ ] UPD/Datagram 
 - [ ] Net 

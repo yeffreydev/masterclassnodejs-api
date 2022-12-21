@@ -41,12 +41,21 @@ GANING STABILITY
 - [x] Adding API Tests
 - [x] Section Review 
 
-goal:  Loose ends: section overview 1:7
 Gaining performance
 - [x] section overview 
 - [x] refactoring for performance 
 - [x] using performance hooks
-- [ ] using a cluster 
-- [ ] using child processes
-- [ ] section review.
+- [x] using a cluster 
+- [x] using child processes
+- [x] section review.
 
+goal Loose ends TLS/SSl 7:7
+Loose Ends
+- [-x] section overview 1:7
+- [ ] HTTP2
+- [ ] VM 
+- [ ] UPD/Datagram 
+- [ ] Net 
+- [ ] TLS /SSL 
+- [ ]  REPL 
+- [ ] Async Hooks

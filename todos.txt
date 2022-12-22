@@ -54,8 +54,8 @@ Loose Ends
 - [x] section overview 1:7
 - [x] HTTP2  - web socket stream server and client
 - [x] VM 
-- [x] UPD/Datagram  - sen message from client to server with UDP protocol in real time
-- [ ] Net 
+- [x] UDP/Datagram  - sen message from client to server with UDP protocol in real time
+- [x] Net 
 - [ ] TLS /SSL 
-- [ ]  REPL 
+- [ ] REPL 
 - [ ] Async Hooks

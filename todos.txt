@@ -49,13 +49,13 @@ Gaining performance
 - [x] using child processes
 - [x] section review.
 
-goal Loose ends TLS/SSl 7:7
+goal: complete course.
 Loose Ends
 - [x] section overview 1:7
 - [x] HTTP2  - web socket stream server and client
 - [x] VM 
 - [x] UDP/Datagram  - sen message from client to server with UDP protocol in real time
 - [x] Net 
-- [ ] TLS /SSL 
+- [x] TLS /SSL 
 - [ ] REPL 
 - [ ] Async Hooks

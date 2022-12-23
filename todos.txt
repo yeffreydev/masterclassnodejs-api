@@ -49,7 +49,6 @@ Gaining performance
 - [x] using child processes
 - [x] section review.
 
-goal: complete course.
 Loose Ends
 - [x] section overview 1:7
 - [x] HTTP2  - web socket stream server and client
@@ -58,4 +57,6 @@ Loose Ends
 - [x] Net 
 - [x] TLS /SSL 
 - [x] REPL 
-- [ ] Async Hooks
+- [x] Async Hooks
+
+- [x] course complete succsessfull

@@ -4,17 +4,17 @@
  */
 
 //Dependencies
-var net = require("net");
+const net = require("net");
 
 //Create the server
-var server = net.createServer(function (connection) {
+const server = net.createServer(function (connection) {
   //Send the world 'pong'
-  var outboundMessage = "pong";
+  let outboundMessage = "pong";
   connection.write(outboundMessage);
 
   //When the client writes something, log it out.
   connection.on("data", function (inboundMessage) {
-    var messageString = inboundMessage.toString();
+    let messageString = inboundMessage.toString();
     console.log("I wrote " + outboundMessage + " and they said " + messageString);
   });
 });

@@ -3,14 +3,14 @@
  */
 
 //Dependencies
-var server = require("./lib/server");
-var workers = require("./lib/wokers");
-var cli = require("./lib/cli");
-var cluster = require("cluster");
-var os = require("os");
+const server = require("./lib/server");
+const workers = require("./lib/wokers");
+const cli = require("./lib/cli");
+const cluster = require("cluster");
+const os = require("os");
 
 // Declare the app
-var app = {};
+const app = {};
 //Init function
 app.init = function (callback) {
   //If we're on the master thread, start the background workers and cli
@@ -24,7 +24,7 @@ app.init = function (callback) {
     }, 50);
 
     ///Fork the process
-    for (var i = 0; i < os.cpus().length; i++) {
+    for (const i = 0; i < os.cpus().length; i++) {
       cluster.fork();
     }
   } else {

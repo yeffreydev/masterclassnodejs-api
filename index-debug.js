@@ -3,13 +3,13 @@
  */
 
 //Dependencies
-var server = require("./lib/server");
-var workers = require("./lib/wokers");
-var cli = require("./lib/cli");
-var exampleDebugginProblem = require("./lib/exampleDebugginProblem");
+const server = require("./lib/server");
+const workers = require("./lib/wokers");
+const cli = require("./lib/cli");
+const exampleDebugginProblem = require("./lib/exampleDebugginProblem");
 
 // Declare the app
-var app = {};
+const app = {};
 //Init function
 app.init = function () {
   //Start the server
@@ -30,7 +30,7 @@ app.init = function () {
 
   //Set foo at 1
   debugger;
-  var foo = 1;
+  const foo = 1;
   console.log("Just assigned 1 to foo");
   debugger;
 

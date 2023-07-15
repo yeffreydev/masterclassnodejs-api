@@ -3,18 +3,18 @@
  */
 
 //Dependencies
-var http2 = require("http2");
+const http2 = require("http2");
 
 //Create client
-var client = http2.connect("http://localhost:6000");
+const client = http2.connect("http://localhost:6000");
 
 //Create a request
-var req = client.request({
+const req = client.request({
   ":path": "/",
 });
 
 //When a message is received, add the pieces of it together until you reach the end
-var str = "";
+const str = "";
 req.on("data", function (chunk) {
   str += chunk;
 });

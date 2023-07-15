@@ -3,14 +3,14 @@
  */
 
 //Dependencies
-var async_hooks = require("async_hooks");
-var fs = require("fs");
+const async_hooks = require("async_hooks");
+const fs = require("fs");
 
 //Target execution context
-var targetExecutionContext = false;
+const targetExecutionContext = false;
 
 //Write an arbitrary async function
-var whatTimeIsit = function (callback) {
+const whatTimeIsit = function (callback) {
   setInterval(function () {
     fs.writeSync(1, "When the setInterval runs, the execution context is " + async_hooks.executionAsyncId() + "\n");
     callback(Date.now());
@@ -24,7 +24,7 @@ whatTimeIsit(function (time) {
 });
 
 //hooks
-var hooks = {
+const hooks = {
   init(asyncId, type, triggerAsyncIc, resource) {
     fs.writeSync(1, "hook init" + asyncId + "\n");
   },
@@ -43,5 +43,5 @@ var hooks = {
 };
 
 //Create a new AsyncHooks instance
-var asyncHook = async_hooks.createHook(hooks);
+const asyncHook = async_hooks.createHook(hooks);
 asyncHook.enable();

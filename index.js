@@ -3,12 +3,12 @@
  */
 
 //Dependencies
-var server = require("./lib/server");
-var workers = require("./lib/wokers");
-var cli = require("./lib/cli");
+const server = require("./lib/server");
+const workers = require("./lib/wokers");
+const cli = require("./lib/cli");
 
 // Declare the app
-var app = {};
+const app = {};
 //Init function
 app.init = function (callback) {
   //Start the server

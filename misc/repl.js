@@ -2,7 +2,7 @@
 // Take in the word 'fizz' and log out 'buzz'
 
 //Dependencies
-var repl = require("repl");
+const repl = require("repl");
 
 //Start the REPL
 repl.start({

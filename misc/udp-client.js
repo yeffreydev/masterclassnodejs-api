@@ -5,14 +5,14 @@
  */
 
 //Dependencies
-var dgram = require("dgram");
+const dgram = require("dgram");
 
 //create the client
-var client = dgram.createSocket("udp4");
+const client = dgram.createSocket("udp4");
 
 //Define the message and pull it into a buffer
-var messageString = "This is a message";
-var messgeBuffer = Buffer.from(messageString);
+const messageString = "This is a message";
+const messgeBuffer = Buffer.from(messageString);
 
 //Send off the message
 client.send(messgeBuffer, 6000, "localhost", function (err) {

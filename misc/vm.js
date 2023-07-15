@@ -4,15 +4,15 @@
  */
 
 //Dependencies
-var vm = require("vm");
+const vm = require("vm");
 
 //Define a context for the script to run in
-var context = {
+const context = {
   foo: 25,
 };
 
 //define the script
-var script = new vm.Script(
+const script = new vm.Script(
   `
     foo= foo *2 
     var bar = foo+1;
